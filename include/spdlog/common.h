@@ -29,9 +29,9 @@
 #undef SPDLOG_HEADER_ONLY
 #if defined(SPDLOG_SHARED_LIB)
 #if defined(_WIN32)
-#ifdef spdlog_EXPORTS
+#ifdef SPDLOG_EXPORTS
 #define SPDLOG_API __declspec(dllexport)
-#else  // !spdlog_EXPORTS
+#else  // !SPDLOG_EXPORTS
 #define SPDLOG_API __declspec(dllimport)
 #endif
 #else  // !defined(_WIN32)
